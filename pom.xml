@@ -53,8 +53,7 @@
                         </goals>
                     </execution>
                     <execution>
-                        <id>check-test</id>
-                        <phase>verify</phase>
+                         <id>default-check</id>
                         <goals>
                             <goal>check</goal>
                         </goals>
@@ -64,9 +63,9 @@
                                     <element>BUNDLE</element>
                                     <limits>
                                         <limit>
-                                            <counter>LINE</counter>
+                                            <counter>BRANCH</counter>
                                             <value>COVEREDRATIO</value>
-                                            <minimum>1.0</minimum>
+                                            <minimum>1.00</minimum>
                                         </limit>
                                     </limits>
                                 </rule>
